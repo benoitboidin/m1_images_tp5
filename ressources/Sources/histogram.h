@@ -6,7 +6,7 @@
 extern float *histogram_make(unsigned char *channel, int size);
 extern float *histogram_make_local(unsigned char *channel, int width, int height,
 				   int i, int j, int half_width);
-extern float *histogram_tdup(float *hist);
+extern float *histogram_dup(float *hist);
 extern void histogram_cumulate(float *hist);
 extern void histogram_normalize(float *hist);
 
