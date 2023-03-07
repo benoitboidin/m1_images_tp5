@@ -1,3 +1,8 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdbool.h>
 #include "histogram.h"
 
 float *histogram_make(unsigned char *channel, int size){
