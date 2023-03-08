@@ -6,7 +6,6 @@
 #include "histogram.h"
 
 float *histogram_make(unsigned char *channel, int size){
-
     float *hist = (float *)malloc(sizeof(float) * HISTOGRAM_NLEV);
     for (int i = 0; i < HISTOGRAM_NLEV; i++){
         hist[i] = 0;
@@ -34,6 +33,7 @@ float *histogram_make_local(unsigned char *channel, int width, int height,
             }
         }
     }
+    return hist;
 }
 
 float *histogram_dup(float *hist){

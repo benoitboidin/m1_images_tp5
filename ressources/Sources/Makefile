@@ -1,4 +1,3 @@
-LDFLAGS= -lm -limago -lpng -ljpeg
 
 default: test-hist
 all: test-hist test-lhist test-stif test-lstif test-threshold al-blur al-thresh al-enhance lms-img
